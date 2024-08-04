@@ -35,7 +35,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const response = await axios.post('/api/search', {
+      const response = await axios.post('https://apigo.onrender.com/search', {
         terms: terms.split(','),
         email: email,
       });
